@@ -12,6 +12,10 @@ class Rectangle {
 
     }
 
+    public Rectangle(int side) {
+        this(side, side);
+    }
+
     public void setWidth(int width) {
         this.width = width;
     }
