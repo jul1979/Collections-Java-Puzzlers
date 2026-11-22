@@ -13,7 +13,9 @@ class Rectangle {
     }
 
     public Rectangle(int side) {
-        this(side, side);
+        if (side < 0) throw new IllegalArgumentException("side should be greater than 0");
+        this.width = side;
+        this.height = side;
     }
 
     public void setWidth(int width) {
